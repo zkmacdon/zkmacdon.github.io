@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaheer MacDonald</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+            <div class="navsub">
+                <div class="navbtn">
+                    <p onclick="switchTabs(event, 'home')">Home</p>
+                </div>
+                <div class="navbtn">
+                    <p onclick="switchTabs(event, 'experience')">Experience</p>
+                </div>
+                <div class="navbtn">
+                    <p onclick="switchTabs(event, 'projects')"> Projects</p>
+                </div>
+    
+            </div>
+            
+    </div>
+
+    <div class="mainsection" id="home">
+        <div class="infobox">
+            <div class="info">
+                <div class="description">
+                    Hi, my name is Zaheer! I'm a recent graduate of uOttawa, where I studied Computer Science and Statistics. I'm interested
+                    in leveraging my background in algorithms, machine learning, optimisation, and probability to problems in health, particularly
+                    in the context of infectious diseases, cancer, and mental illness. 
+                    I'm especially interested in approaches from epidemiology and biostatistics, digital health, and health economics. 
+                    I also maintain an ongoing interest in human factors and user interface design. 
+                    <br>
+                    <br>
+                    Previously I have worked in software development, and have completed a summer research position in quantum computing at uOttawa. 
+                    Check out my site to learn more!
+                </div>
+                <div class="photo-and-name">
+                   
+                        <img src="grad-image.jpg" alt="" 
+                        style="max-width: 250px; max-height: 250px;">
+                   
+                    <h1>Zaheer MacDonald</h1>
+                </div>
+            </div>
+            <div class="links">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="mainsection" id="experience">
+        <div>
+            <div class="experiencesnav" style="border: 1px solid black;">
+                <div class="nav-rocker">
+                    <div class="subnavbtn">
+                        Education
+                    </div>
+                    <div class="subnavbtn">
+                        Work
+                    </div>
+                </div>
+            </div>
+        
+            <div class="experience-section" id="education">
+                uOttawa: Honours BSc - Computer Science and Statistics
+            </div>
+    
+            <div class="experience-section" id="work">
+    
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="mainsection" id="projects">
+        Test3
+    </div>
+
+    <script>
+        function switchTabs(evt, section){
+            var i, sections;
+
+            sections = document.getElementsByClassName("mainsection");
+            for (i = 0; i < sections.length; i++){
+                sections[i].style.display = "none";
+            }
+
+            document.getElementById(section).style.display = "flex";
+            evt.currentTarget.className += " active";
+        }
+
+
+        function switchSubTabs(evt, subSection){
+
+        }
+    </script>
+</body>
+</html>
+
