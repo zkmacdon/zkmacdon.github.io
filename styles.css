@@ -20,9 +20,9 @@
 .mainsection{
     background-color: aqua;
     border: 1px solid black;
-    display: flex;
     justify-content: center;
-    
+    width: 100%;
+    display: flex;
 }
 
 .mainsection{
@@ -39,8 +39,7 @@ body {
 
 .infobox{
     width: 60%;
-    display: flex;
-    justify-content: center;
+    
     border: 1px solid black;
     padding: 10px;
     margin-top: 40px;
@@ -68,12 +67,71 @@ body {
 
 img{
     justify-content: center;
+    width: auto;
 }
 
+
+.links{
+    justify-content: center;
+    text-align: center;
+}
+
+.icons {
+    width: 30px; 
+    height: 30px;
+    padding: 10px;
+}
+
+.project-box{
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 60%;
+}
+
+
+.inside-project-box{
+    float: left;
+    display: flex;
+    padding: 10px;
+    text-align: left;
+}
+
+.experience-box{
+    border: 1px solid black; 
+    border-radius: 5px;
+    text-align: center; 
+    max-width: 60%; 
+}
+
+.experience-section{
+    text-align: left;
+    max-width: 100%;
+
+}
+
+#work{
+    display: none;
+}
+
+.experience-header{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;   
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+
+
+}
+
+.experience-header p {
+    font-weight: bold;
+}
 .experiencesnav{
     display: flex;
-    width: 100%;
+    max-width: 100%;
     justify-content: center;
+    border: 1px solid black;
 }
 
 
@@ -85,8 +143,7 @@ img{
 .subnavbtn{
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    
     text-align: center;
     float: left;
     border-bottom-left-radius: 5px;
