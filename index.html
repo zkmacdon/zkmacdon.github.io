@@ -30,11 +30,12 @@
                     Hi, my name is Zaheer! I'm a recent graduate of uOttawa, where I studied Computer Science and Statistics. Moving forward,
                     I'm interested in exploring the intersection of algorithms, probability, and psychology -- particularly in applications to health.
                     I'm especially interested in learning more about (and utilising tools/techniques from) operations research, game theory, and human factors,
-                    and seeing how they manifest in multidisciplinary problems.
+                    and seeing how they manifest in and apply to multidisciplinary problems.
                     <br>
                     <br>
                     I'm currently taking a gap year to work on projects, engage in community work, and study some subjects which I didn't
                     have time for in undergrad. After that, I'm hoping to start grad school in 2026.
+                    <br>
                     <br>
                     Previously I have worked in software development, and as a summer research assistant in quantum computing at uOttawa. 
                     Check out my site to learn more!
@@ -86,8 +87,8 @@
                         <i>Honours Bachelor of Science, Computer Science and Statistics</i>
                     </p>
                     
-                    <p> Among the things which I am most proud to have taken part in 
-                        while at uOttawa was competing in the 2023 Putnam Mathematics 
+                    <p> Among the experiences which I am most proud to have taken part in 
+                        while at uOttawa was the 2023 Putnam Mathematics 
                     Competition. I was also a 
                     regular attendee of weekly Putnam problem solving sessions, held by the Math department, where
                     I met some amazing people.
@@ -95,18 +96,30 @@
                     <br>
                     Below are some classes I took throughout my time at university:
                     </p>
-                    <ul>
-                        <li>Mathematics: Calculus III, Real Analysis, Regression, Computational Statistics, Applied Probability,
-                            Foundations of Probability, 
+                    <ul class="bullets">
+                        <li>Mathematics: <u onclick="openModal(event, this.innerText)">Calculus III</u>, <u onclick="openModal(event, this.innerText)">Real Analysis</u>, 
+                            <u onclick="openModal(event, this.innerText)">Regression</u>, <u onclick="openModal(event, this.innerText)">Computational Statistics</u>, 
+                            <u onclick="openModal(event, this.innerText)">Stochastic Processes</u>, <u onclick="openModal(event, this.innerText)">Foundations of Probability</u>
+                    
                         </li>
-                        <li>Computer Science: User Interface Design, Topics in Algorithms, Algorithm Design,
-                            Machine Learning for Chemistry, Discrete Structures, 
+                        <li>Computer Science: <u onclick="openModal(event, this.innerText)">User Interface Design</u>, <u onclick="openModal(event, this.innerText)">Topics in Algorithms</u>,
+                            <u onclick="openModal(event, this.innerText)">Algorithm Design</u>, <u onclick="openModal(event, this.innerText)">Machine Learning for Chemistry</u>, 
+                            <u onclick="openModal(event, this.innerText)">Discrete Structures</u>
                         </li>
-                        <li>Social and Life Sciences: Psychopathology, Physiological Psychology, Personality Theory,
-                            Cell Biology, Cognition, History of Medicine & Public Health in the Middle East
+                        <li>Social and Life Sciences: <u onclick="openModal(event, this.innerText)">Psychopathology</u>, <u onclick="openModal(event, this.innerText)">Physiological Psychology</u>, 
+                            <u onclick="openModal(event, this.innerText)">Personality Theory</u>, <u onclick="openModal(event, this.innerText)">Cognition</u>
                         </li>
                     </ul>
                     Graduated Cum Laude, and made Dean's List in Fall 2024.
+                    <div class="modal-stuff" id = "modal-stuff" style="display: none;">
+                        <div style="justify-content: right; text-align: right;">
+                            <button onclick="closeModal(event)"> <span>&times;</span></button>
+                        </div>
+                        <h3 id="modal-header">Test</h3>
+                        <p id="modal-body">
+                            Test.
+                        </p>
+                    </div>
                 </div>
         
                 <div class="experience-section" id="work">
@@ -140,8 +153,8 @@
                                  the CHSH game proves the legitimacy of quantum advantage.
                             </li>
                         </ul>
-                        It was a fascinating experience, and am thankful to have been exposed to higher-level mathematics and explore its applications in
-                        quantum computing!
+                        It was a fantastic experience, and I'm thankful to have been exposed to higher-level mathematics and explore its applications in
+                        quantum computing.
                     </div>
                     <div>
                         <div class="experience-header">
@@ -176,11 +189,12 @@
                                 taking in data hourly from 100's of sensor inputs across 10's of machines.
                             </li>
                             <li>
-                                Improving analytics dashboards pertaining to manufacturing output in PowerBI by writing custom PowerScripts (?), refactoring data table designs,
+                                Improving analytics dashboards pertaining to manufacturing output in PowerBI by writing script with Power Query and Python, refactoring data table designs,
                                 and improving usability of visualisations and tabs for stakeholders within the company.
                             </li>
                         </ul>
                     </div>
+                
                 </div>
             </div>
             
@@ -193,7 +207,7 @@
             <h3>Collatz Numbers</h3>
             <div class="inside-project-box">
              
-                    <p>
+                    <p class="project-text">
                     In this project, I took the well-known Collatz conjecture from mathematics
                     and used recursion to model it. I then played around with the behaviour some more,
                     and upon visualising the behaviour of Collatz Numbers (a term I came up with 
@@ -209,6 +223,7 @@
             </div>
         </div>
     </div>
+
 
     <script>
         function switchTabs(evt, section){
@@ -235,6 +250,109 @@
             evt.currentTarget.className += "active";
         }
 
+        
+     </script>
+
+     <script>
+        const courses = {
+              
+                    "Calculus III":{
+                        "Code": "MAT 2122",
+                        "Name" :"Multivariable Calculus",
+                        "Description": "Derivatives as linear maps, the chain rule. The Clairaut-Schwarz theorem. Taylor's theorem. Implicit function theorem. Extrema, critical points. Lagrange multipliers. Double and triple integrals, Fubini's theorem, polar, spherical and cylindrical coordinates. Change of variables. Line integrals, Green's theorem. Parametric surfaces and surface integrals. Curl and Stokes's theorem, existence of potentials. Divergence and Gauss's theorem. Applications."
+                    },
+                    "Real Analysis":{
+                        "Code": "MAT 2125",
+                        "Name": "Elementary Real Analysis",
+                        "Description": "Review of the completeness properties of real numbers. Supremum and infimum, lim sup, lim inf. The topology of Rn. Uniform continuity. Compactness, Heine-Borel. The Riemann integral, the fundamental theorem of calculus, improper integrals. Sequences and series of functions, uniform convergence. Fourier series."
+                    },
+                    "Linear Algebra II":{
+                        "Code": "MAT 2141",
+                        "Name": "Honours Linear Algebra",
+                        "Description": "Vector spaces, direct sums and complement of subspaces, linear maps, representation of linear maps by matrices, dual spaces, transpose mappings, multilinear mappings, determinants, inner products, orthogonal projections, the Gram-Schmidt algorithm. Eigenvalues and eigenvectors, diagonalization of symmetric matrices. The emphasis of this course is on proving all results."
+                    },
+                    "Regression":{
+                        "Code": "MAT 3375",
+                        "Name": "Regression Analysis",
+                        "Description": "Modeling relationships between outcome (dependent) variables and covariates (independent variables) using simple and multiple linear regression models. Estimation and hypothesis testing using least squares and likelihood methods. Performing model diagnostics and assessing goodness of fit properties. Variable selection and finding the best fit. Non-linear regression and transformations. Weighted regression and generalized least square. Analysis of data using statistical software packages."
+                    },
+                    "Computational Statistics":{
+                        "Code": "MAT 4374",
+                        "Name": "Computational Statistics",
+                        "Description": "Computational workflow and notebooks. Integration with quadrature and Monte Carlo (rejection, importance and Markov chain sampling). Optimization techniques such as the EM algorithm and gradient descent. Error estimation such as bootstrap and cross-validation. Simulation studies. Statistical programming and the use of statistical software. Other topics in computational statistics at instructor’s discretion."
+                    },
+                    "Stochastic Processes":{
+                        "Code": "MAT 4371",
+                        "Name": "Applied Probability",
+                        "Description": "An introduction to stochastic processes, with emphasis on Markov processes. Review of basic probability, limit theorems and conditioning. The Poisson process. Limit theorems for regenerative processes. Discrete-time and continuous-time Markov processes. Hidden Markov processes on finite state spaces. Applications chosen from signal processing, queuing theory, economics, finance and actuarial sciences."
+                    },
+                    "Foundations of Probability":{
+                        "Code": "MAT 3172",
+                        "Name": "Foundations of Probability",
+                        "Description": "An overview of probability from a non-measure theoretic point of view. Random vectors; independence, conditional expectation and probability, consequences. Functions of random variables. Various types of convergence leading to proofs of the major theorems in classical probability theory."
+                    },
+                    "Discrete Structures":{
+                        "Code": "CSI 2101",
+                        "Name": "Discrete Structures",
+                        "Description": "Discrete structures as they apply to computer science, algorithm analysis and design. Predicate logic. Review of proof techniques; application of induction to computing problems. Graph theory applications in information technology. Program correctness, preconditions, postconditions and invariants. Analysis of recursive programs using recurrence relations. Properties of integers and basic cryptographical applications."
+                    },
+                    "Algorithm Design":{
+                        "Code": "CSI 3105",
+                        "Name": "Design and Analysis of Algorithms I",
+                        "Description": "Analysis of algorithms: worst-case analysis, complexity analysis, asymptotic notations and basic complexity classes. Algorithm design techniques: brute force, divide and conquer, dynamic programming, greedy, backtracking. Computational complexity of problems: lower bound arguments, the classes P, NP, NP-complete, dealing with NP-complete problems."
+                    },
+                    "Topics in Algorithms":{
+                        "Code": "CSI 4103",
+                        "Name": "Topics in Computer Science I: Great Algorithms",
+                        "Description": "Behind every computing advance of the last century stands a great algorithm: error-correction for reliable communication, spectral decomposition and the Fourier transform for data analysis, public-key encryption for e-commerce, gradient descent and backpropagation for machine learning. The aim of the course is to provide a broad perspective on what makes these algorithms tick and the variety of contexts in which they apply."
+                    },
+                    "Machine Learning for Chemistry":{
+                        "Code": "CHM 4390",
+                        "Name": "Topics in Physical Chemistry: Introduction to Machine Learning for Chemistry",
+                        "Description": "The aim of the course is to introduce the students to machine learning and its use for modeling and prediction on chemistry and biochemistry-related tasks. Students will be exposed to basic algorithmic, statistical and mathematical aspects of machine learning – and will learn to apply it in some pedagogical problems. Topics include supervised and unsupervised learning, linear regression and classification, clustering and dimensionality reduction, and feed-forward neural networks."
+                    },
+                    "Psychopathology":{
+                        "Code": "PSY 3171",
+                        "Name": "Psychopathology",
+                        "Description": "An introduction to the study of psychological disorders: causes, assessment, and treatment. Integration of biological, psychological, and social perspectives. Current research in psychopathology."
+                    },
+                    "Cognition":{
+                        "Code": "PSY 3377",
+                        "Name": "Cognition",
+                        "Description": "Introduction to contemporary cognitive psychology. Origin of cognitive and symbolic processes. Historic foundations. Acquisition of various kinds of knowledge. Analysis of cognitive strategies. The course includes laboratory activities. Current research in cognition."
+                    },
+                    "Physiological Psychology":{
+                        "Code": "PSY 2301",
+                        "Name": "Biological Founations of Behaviour",
+                        "Description": "Fundamentals of genetics and cytology. Elements of neurophysiology and physiological methods. Evolutionary development and organization of mammalian nervous system. Basic neuroanatomy. Neurochemical aspects of behaviour. Methods and techniques in physiological psychology. Sensory and motor systems and associated pathways. Current research in biological foundations of behavior."
+                    },
+                    "Personality Theory":{
+                        "Code": "PSY 3303",
+                        "Name": "Personality",
+                        "Description": "Major theories in personality. Main schools of thought and study of general characteristics of each theory. Leading representative of each school. Current research in personality."
+                    },
+                    "User Interface Design":{
+                        "Code": "SEG 3125",
+                        "Name": "Analysis and Design of User Interfaces",
+                        "Description": "Psychological principles of human-computer interaction. Evaluation of user interfaces. Usability engineering. Task analysis, user-centered design and prototyping. Conceptual models and metaphors. Software design rationale. Design of windows, menus and commands. Voice and natural language I/O. Response time and feedback. Colour, icons and sound. Internationalization and localization. User interface architectures and A PIs. Case studies and project."
+                    }
+
+                    
+                
+            }
+        
+        
+        function openModal(evt, val){
+            document.getElementById('modal-stuff').style.display = "block";
+            document.getElementById('modal-header').innerText = courses[val].Code + " - " + courses[val].Name
+            document.getElementById('modal-body').innerText = courses[val].Description
+            evt.currentTarget.className += "active";
+        }
+
+        function closeModal(evt){
+            document.getElementById('modal-stuff').style.display = "none";
+            evt.currentTarget.className += "active";
+        }
      </script>
 </body>
 </html>
