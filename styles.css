@@ -28,7 +28,6 @@ body {
 
 }
 .navbtn:hover {
-    background-color: rgb(209, 155, 244);
     transition: 0.3s;
     cursor: pointer;
     text-decoration: underline;
