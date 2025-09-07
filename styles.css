@@ -293,3 +293,7 @@ button:hover{
     color: rgb(145, 0, 194);
     transition: 1s;
 }
+
+.project-text{
+    padding: 5px;
+}
