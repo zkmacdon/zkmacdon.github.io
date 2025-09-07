@@ -257,7 +257,7 @@ button:hover{
 .modal-stuff{
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 200px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -268,9 +268,28 @@ button:hover{
 }
 
 .modal-contents{
-    background-color: #fefefe;
+    background-color: #f6d2ff;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    border-radius: 15px;
+}
+
+.modal-contents button {
+    background-color: inherit;
+    color: rgb(145, 0, 194);
+    font-size: large;
+    font-weight: bold;
+    border: 0px;
+    border-radius: 5px;
+    padding: 4px;
+    padding-left: 8px;
+    padding-right: 8px
+}
+
+.modal-contents button:hover{
+    background-color: #ecb0fb;
+    color: rgb(145, 0, 194);
+    transition: 1s;
 }

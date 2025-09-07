@@ -29,7 +29,7 @@
                 <div class="description">
                     Hi, my name is Zaheer! I'm a recent graduate of uOttawa, where I studied Computer Science and Statistics. Moving forward,
                     I'm interested in exploring the intersection of algorithms, probability, and psychology — particularly in applications to health.
-                    I'm especially interested in learning more about (and utilising tools/techniques from) operations research, game theory, and human factors,
+                    I'm especially interested in learning more about (and utilising tools/techniques from) operations research, microeconomics, and human factors,
                     and seeing how they manifest in and apply to multidisciplinary problems.
                     <br>
                     <br>
@@ -37,7 +37,7 @@
                     have time for in undergrad. After that, I'm hoping to start grad school in 2026.
                     <br>
                     <br>
-                    Previously I have worked in software development, and as a summer research assistant in quantum computing at uOttawa. 
+                    Previously I have worked as an intern in software development, and as a summer research assistant in quantum computing at uOttawa. 
                     Check out my site to learn more!
                 </div>
                 <div class="photo-and-name">
@@ -114,7 +114,7 @@
                     <div class="modal-stuff" id = "modal-stuff" style="display: none;">
                         <div class="modal-contents">
                             <div style="justify-content: right; text-align: right;">
-                                <button onclick="closeModal(event)"> <span>&times;</span></button>
+                                <button onclick="closeModal(event)" class="modal-btn"> <span>&times;</span></button>
                             </div>
                             <h3 id="modal-header">Test</h3>
                             <p id="modal-body">
@@ -129,7 +129,6 @@
                     <div>
                         <div class="experience-header">
                             <p>University of Ottawa</p> <p>May — Sept. 2024</p>
-                            
                         </div>
                      
                         <p style="padding-top: 0px; margin-top: 0px;">
@@ -145,7 +144,7 @@
                         </p>
                         <ul>
                             <li>Reading notes on the mathematical foundations of quantum computing and papers
-                                pertaining to variants of the CHSH game. This involved learning about tensors, higher order functions,
+                                pertaining to variants of the CHSH game. This involved learning about tensors, higher order functions, quantum channels,
                                 and lots more — particularly in the context of quantum computing.
                             </li>
                             <li>Running 1000's of simulations of the multiplicative variants of the standard, mod-2 CHSH game as generated
@@ -153,11 +152,11 @@
                                 the use of IBM's Qiskit library as well as numpy, sympy, and others to encode the components of the quantum circuits and run the simulations.
                             </li>
                             <li>Preparing slides to for a presentation about quantum computing for undergraduate science students. The presentation centred around the notion
-                                of quantum advantage, and how the CHSH game proves this.
+                                of quantum advantage, and how the CHSH game proves this by way of the improvement of a quantum strategy over the optimal classical strategy.
                             </li>
                         </ul>
                         It was a fantastic experience, and I'm thankful to have been exposed to higher-level mathematics and explore its applications in
-                        quantum computing.
+                        quantum computing. It also offered a fascinating new perspective for me on game theory, a subject which continues to be of great interest to me.
                     </div>
                     <div>
                         <div class="experience-header">
@@ -182,18 +181,18 @@
                                 in accordance with their needs, and then writing the backend. The backend was built in Python, 
                                 and involved multithreading, networking, and computer vision — exciting stuff!
                             </li>
-                            <li> Developing a machine learning model using density-based clustering better predict machine failure. 
+                            <li> Developing a machine learning model using density-based clustering to better predict machine failure. 
                                 I leveraged my knowledge of metric spaces to define a custom metric specific to the dataset, and used that
                                 to determine a threshold across certain parameters after which machine failure was likely.
                             </li>
                             <li>
-                                Creating a real-time analytics dashboard with PowerBI, Python, and Azure to track and visualise sensor data. This was done
+                                Creating a real-time analytics dashboard with Power BI, Python, and Azure to track and visualise sensor data. This was done
                                 in order to understand which machines were going down and when, as well as how productive each station was as part of the production line. This involved
                                 taking in data hourly from 100's of sensor inputs across 10's of machines.
                             </li>
                             <li>
-                                Improving analytics dashboards pertaining to manufacturing output in PowerBI by writing script with Power Query and Python, refactoring data table designs,
-                                and improving usability of visualisations and tabs for stakeholders within the company.
+                                Improving analytics dashboards pertaining to manufacturing output in Power BI by writing scripts with Power Query and Python, refactoring data table designs,
+                                and improving the usability of visualisations and tabs for stakeholders within the company.
                             </li>
                         </ul>
                     </div>
@@ -206,6 +205,25 @@
     </div>
 
     <div class="mainsection" id="projects">
+        <div class="project-box">
+            <h3>Minitac</h3>
+            <div class="inside-project-box">
+             
+                    <p class="project-text">
+                    As part of a final project for my Great Algorithms class, myself and two group members explored the Minimax algorithm, its
+                    applications in common games and beyond, and how it compares to other algorithmic strategies such as the greedy strategy.
+                    As part of this project, I developed an implementation of the Minimax algorithm in the context of tic-tac-toe, where a player
+                    tries his hand at an agent using the Minimax strategy. The game can be player <a href="">here</a>, while the paper our team
+                    wrote and the game code can be found <a href="">here</a>. 
+                     <a href="https://www.github.com/zkmacdon/Collatz">here</a>.
+
+                    </p>
+        
+                
+                <img src="collatz.png" style="max-width: 200px; max-height: 200px;" alt="">
+                
+            </div>
+        </div>
         <div class="project-box">
             <h3>Collatz Numbers</h3>
             <div class="inside-project-box">
