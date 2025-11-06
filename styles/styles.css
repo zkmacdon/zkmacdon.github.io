@@ -62,28 +62,17 @@ body {
     0 2px 2px hsl(0deg 0% 0% / 0.075),
     0 4px 4px hsl(0deg 0% 0% / 0.075),
     0 8px 8px hsl(0deg 0% 0% / 0.075),
-    0 16px 16px hsl(0deg 0% 0% / 0.075)
-  ;
+    0 16px 16px hsl(0deg 0% 0% / 0.075);
     background-color: #d9b8ff;
-}
-
-.descriptionother{
- 
-    width: 50%;
 }
 
 .info{
     justify-content: center;
     text-align: center;
     padding: 10px;
-    margin: 10px;
-    
+    margin: 10px;  
 }
 
-
-.extrainfor{
-    display: inline-flex;
-}
 
 @media only screen and (max-width: 768px) { /* Adjust breakpoint as needed */
     .info {
