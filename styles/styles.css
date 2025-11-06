@@ -52,7 +52,7 @@ body {
 }
 
 .infobox{
-    max-width: 60%;
+    max-width: 40%;
     border: 1px solid black;
     border-radius: 15px;
     padding: 10px;
@@ -67,15 +67,22 @@ body {
     background-color: #d9b8ff;
 }
 
-.description{
+.descriptionother{
  
     width: 50%;
 }
 
 .info{
-    justify-content: left;
-    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
     
+}
+
+
+.extrainfor{
+    display: inline-flex;
 }
 
 @media only screen and (max-width: 768px) { /* Adjust breakpoint as needed */
@@ -97,6 +104,9 @@ body {
     .photo-and-name{
         min-width: 100%;
         width: 100%;
+        align-items: center;
+        margin-top: 10px;
+        padding-top: 10px;
     }
 
     .project-box{
@@ -119,7 +129,7 @@ body {
     justify-content: center;
     text-align: center;
     position: relative;
-    width: 50%;
+    
 }
 
 img{
